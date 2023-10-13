@@ -1,0 +1,114 @@
+
+         front-end technology
+        ----------------------
+basic feature & concept
+----------------------
+
+basic commands 
+---------------
+       1.to create react project :- npx create-react-app project-name
+       2. to run react project :- npm start
+       3. install react-router-dom
+* is an collection of js libraries : used to design UI
+* creating single page application : gmail,facebook,twitter
+* Declarative approach :
+* immutable (non changable)
+* pure functions : it will accept immutable objects and returns a new object. it didn't cause any side effect : Ex- react components
+* virtual Dom
+// rfce - react functional component export //
+// rcc - react class component
+* react using JSX(javascript xml)
+* JSX to convert (html,css,js) using babel library
+          - jsx is a compination of javascript and xml
+          - react fragments : <> </> similar to <div> </div>
+          - every jsx element must have closing tag 
+          - tag without content can be represented as self closing tag : <tag/>
+          - To style use Inline Styling in component - where css property should be in camel case in an object          - changes in attribute :- always use camel letters
+                - class become className
+* command for creating react app : create-react-app
+* components :- small part of UI,React app is a collection components,they are arranged as a tree structure with parent/start node as 'app' component
+          -component is a js file, with filename will start with capital letter, it always return HTML
+          - different way to create component
+                 >functional component / stateless component
+                 > class based component / stateful component
+          - Style react component
+                 >  inline Styling
+                 > external style sheet
+* Data sharing in react component :
+    >  One way binding (parent to child) using props
+    > state lifting :- data sharing method between siblings, creating state in parent component 
+        
+* React events :-
+             > without argument function :- event bind using its function name only
+             > with argument function :- event binding using arrow function
+             > with event object as argument : events bind using arrow function with argument as events
+* conditional rendering :- 
+             > if statement : && operator
+             > if else statement : ternery operator ?:
+*React state : Built in object  
+             > Store property of component
+             > store changes then it re-render the componentn: Use setState function
+
+      - react component life cycle 
+             > Mounting phase : putting all elemnets into Dom
+                    - constructor()
+                    - getDerivedStateFromProps()
+                    - render()
+                    - componentDidMount()
+             > Updating phase : component Updating
+                    - getDerivedStateFromProps()
+                    - shouldCompontUpdate()
+                    - render()  
+                    - getSnapshotBeforeUpdate()
+                    -componentDidUpadte()
+             > Unmounting phase : removing element from DOM
+                     -componentWillUnmount()
+* React Hooks : for making functional component to use react features
+             >  import hook, and to use call the hook inside component
+             >  rules for applying hook :
+                     - can used only in functional component
+                     - it can only called at the top level of component 
+                     - Hooks are not conditional
+             > different types of Hooks
+                     - predefined Hooks
+                           ~ useState(initial-value) :- it will return state and function for updating state
+                           ~ useEffect(<function>,<dependency>) : second argument is optional
+                                                                : no dependency argument passed- runs on every render
+                                                                : an empty array - runs only on the first render
+                                                                : props or state value : run on the first render, and any time any dependency value change
+                           ~ UseNavigate :- redirect from one page to another
+                     - custom Hooks
+* difference between functional component and class based component
+
+         functional component                    class based component
+        ----------------------                  --------------------------
+           1. js pure function accept               1. a class extended from react component 
+              props as argument return jsx              and render function it return 
+              (react element)                           jsx(react element)
+           2.no need to render function             2. need render function to return jsx
+           3.run code from top to bottom,           3. component alive depending on the life 
+             once jsx return it cannot be alive         cycle phase
+           4. stateless component                   4. statefull component
+           5. hooks are used                        5. no need to use hook
+           6. constructor is not used               6. Use constructor to initiaise the state
+           7. Life Cycle method like component-     7. can use life cycle method 
+             DidMount is not used                      inside component
+
+* rendering List : use map method
+* text boxil entereyunna content js partilkk kondaran statel kodkknam
+* react forms : 
+         - forms are handled by component 
+         - preventDefault - prevent reload
+         - type of components
+              > Controlled component - managed by react component
+              > Uncontrolled component - manage by DOM
+* Api call :-
+            - use Axios library : return promise
+* routing / set up path in react : 
+             -use react-router-dom library
+                    > entire application should be in BrowserRouter
+                    > place all components needed to set path inside routes in App component
+                    > to setup path for component use Route inside Routes
+
+                    
+*rendering - displaying html elements in browser
