@@ -67,6 +67,7 @@ else{
     // get video details
     const {data} = await getAvideo(videoCardId)
     let selectedCategory = categories.find(item=>item.id===categoryId)
+    console.log(typeof(selectedCategory));
     selectedCategory.allVideos.push(data)
     console.log(selectedCategory);
     await updateCategory(categoryId,selectedCategory)

@@ -42,7 +42,7 @@ navigateByUrl('/home')
           </div>
           <div className='cards border rounded p-2 border-tertiery shadow'>
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="https://w7.pngwing.com/pngs/611/260/png-transparent-arrow-category-arrow-classification-title.png " />
+              <Card.Img variant="top" src="https://cdn0.iconfinder.com/data/icons/infographic-orchid-vol-1/256/Colorful_Label-512.png" />
               <Card.Body>
                 <Card.Title>Categories videos </Card.Title>
                 <Card.Text>

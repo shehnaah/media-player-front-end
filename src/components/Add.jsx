@@ -27,7 +27,7 @@ setVideo({...video,embbedlink:""})
     }
   }
 
-  const handleUpload=async ()=>{
+  const handleUpload = async ()=>{
     const {id,caption,url,embbedlink}=video
     console.log(video);
     if(!id||!caption||!url||!embbedlink){
